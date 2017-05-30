@@ -1,0 +1,239 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.michael.thrones.WriteRview"
+    android:background="#ff8300"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    >
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView_review"
+        android:scrollbars="none"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout android:id="@+id/scrollView_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView android:id="@+id/locationQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:text="Make sure this is your location!"
+                />
+
+            <TextView android:id="@+id/locationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:text="If this is here google cannot find your location \n"
+                android:layout_alignBottom="@+id/locationQuestion" />
+
+            <TextView android:id="@+id/Question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/locationTextView"
+                android:text="Are you male or female?"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                />
+
+            <RadioGroup android:id="@+id/question1RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Question1"
+                >
+
+                <RadioButton android:id="@+id/maleRadButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="male"
+                    android:textSize="20dp"
+                    />
+
+                <RadioButton android:id="@+id/femaleRadButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:text="female "
+                    android:textSize="20dp"
+                    />
+
+            </RadioGroup>
+
+            <TextView android:id="@+id/cleanQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/question1RadioGroup"
+                android:text="How clean is the bathroom?"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                />
+
+            <RadioGroup android:id="@+id/cleanRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cleanQuestion">
+
+                <RadioButton android:id="@+id/veryClean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/cleanQuestion"
+                    android:text="Very Clean!"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    />
+
+                <RadioButton android:id="@+id/clean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/veryClean"
+                    android:text="Clean"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    />
+
+                <RadioButton android:id="@+id/okClean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/clean"
+                    android:text="Okay"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    />
+
+                <RadioButton android:id="@+id/notClean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/okClean"
+                    android:text="Not Clean"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    />
+
+                <RadioButton android:id="@+id/dirtyClean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/notClean"
+                    android:text="Dirty!"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    />
+
+            </RadioGroup>
+
+            <TextView android:id="@+id/equipmentQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cleanRadioGroup"
+                android:text="How well equipped is the bathroom?"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                />
+
+            <RadioGroup android:id="@+id/equipRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cleanQuestion">
+
+                <RadioButton android:id="@+id/veryEquip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/equipmentQuestion"
+                    android:text="Very Equipped!"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    />
+
+                <RadioButton android:id="@+id/equip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/veryEquip"
+                    android:text="Equipped"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    />
+
+                <RadioButton android:id="@+id/okEquip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/equip"
+                    android:text="Okay"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    />
+
+                <RadioButton android:id="@+id/notEquip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/okEquip"
+                    android:text="Not Equipped"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    />
+
+                <RadioButton android:id="@+id/dirtyEquip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/notClean"
+                    android:text="Nothing here!"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp"
+                    />
+
+            </RadioGroup>
+
+            <EditText android:id="@+id/comments"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/equipRadioGroup"
+                android:textColorHint="#ffffff"
+                android:hint="Enter comments here"
+                />
+
+            <TextView android:id="@+id/starsQuestion"
+                android:layout_alignBottom="@+id/comments"
+                android:text="How many stars would you give this place? Between 1 and 5 stars!"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RatingBar android:id="@+id/starRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:numStars="5"
+                android:stepSize=".2"
+                />
+
+            <Button android:id="@+id/submitSurvey"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/starRating"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:textSize="20dp"
+                android:text="Submit!"
+                android:textColor="#ff8300"
+                android:onClick="submitSurvey"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

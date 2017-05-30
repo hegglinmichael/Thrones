@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "Thrones": {
+      "applicationId": "Iv1Ub7IhyBvWXo8jvrWPJ0E8YhRQdTgIrGJklzOx"
+    },
+    "_default": {
+      "link": "Thrones"
+    }
+  }
+}

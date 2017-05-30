@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Thrones</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_reviews">Reviews</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_write_rview">WriteRview</string>
+    <string name="title">Thrones</string>
+    <string name="title_activity_bathroom_addition">BathroomAddition</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_add_bathroom">AddBathroom</string>
+    <string name="title_activity_find_bathroom_reviews">FindBathroomReviews</string>
+</resources>

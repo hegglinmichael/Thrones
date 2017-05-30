@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.michael.thrones.MainActivity">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Find a bathroom"
+        android:textColor="#ff8300"
+        android:textSize="20dp"
+        android:id="@+id/findBathroomButton"
+        android:background="#5e5e5e"
+        android:onClick="getRatedBathrooms"
+        android:layout_above="@+id/lookAtReviewButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="6dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter an address"
+        android:gravity="center"
+        android:textColorHint="#5e5e5e"
+        android:textColor="#5e5e5e"
+        android:minHeight="40dp"
+        android:id="@+id/enterAnAddress"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/searchButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/searchButton"
+        android:background="#5e5e5e"
+        android:textColor="#ff8300"
+        android:onClick="directionsToLocation"
+        android:layout_alignBottom="@+id/enterAnAddress"
+        android:layout_alignEnd="@+id/findBathroomButton" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Write a review"
+        android:background="#5e5e5e"
+        android:textColor="#ff8300"
+        android:textSize="20dp"
+        android:id="@+id/writeReviewButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="openWriteReview"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a bathroom"
+        android:id="@+id/addBathroomButton"
+        android:background="#5e5e5e"
+        android:textColor="#ff8300"
+        android:textSize="20dp"
+        android:layout_above="@+id/writeReviewButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="6dp"
+        android:onClick="openAddBathroom"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#5e5e5e"
+        android:textColor="#ff8300"
+        android:textSize="20dp"
+        android:text="Look at reviews"
+        android:layout_above="@+id/addBathroomButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/lookAtReviewButton"
+        android:onClick="openReviews"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/main_pic"
+        android:layout_above="@+id/searchButton"
+        android:layout_marginBottom="6dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
